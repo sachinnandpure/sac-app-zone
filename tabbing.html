@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.tabbing-wraper {background-color:#f7f7f7;padding:20px 15px;}ul.tabber {margin:0;padding:0;list-style:none;clear:both;overflow:hidden;margin-bottom: 20px;border-bottom:1px solid #c7c8c3;}ul.tabber li {float:left;min-height:50px;font-size:20px;color:#c7c8c3;width:48%;text-indent:10px;text-align:left;}ul.tabber li.active {border-bottom:3px solid #f79a21;}.tabbing-wraper table {border-collapse:collapse;}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	function showTabber(id,tab){
+		jQuery('.tabbing-wraper table').hide();
+		jQuery('#'+id).show();
+		jQuery('ul.tabber li').removeClass('active');
+		jQuery('.'+tab).addClass('active');
+	}
+</script>
+</head>
+
+<body>
+<div class="tabbing-wraper">
+  <ul class="tabber">
+    <li class="tab1 active" onclick="showTabber('wayRegister','tab1')">Ways to Register</li>
+    <li class="tab2" onclick="showTabber('onSiteTraining','tab2')">On-Site Training</li>
+  </ul>
+  <table class="data-table-contact" id="wayRegister">
+    <tr>
+      <td class="a-center"><img border="0" align="top" height="28px" width="28px" src="{{skin url="images/phone.gif"}}"></td>
+      <td valign="top"><strong>Phone</strong><br>
+        703.548.3440, option #3<br>
+        800.283.7476, option #3<br>
+        (U.S. only)</td>
+    </tr>
+    <tr>
+      <td class="a-center"><img border="0" src="{{skin url="images/fax.gif"}}" alt="Fax registration: (703) 535-6490"></td>
+      <td valign="top"><strong>Fax<br>
+        </strong>703.535.6490</td>
+    </tr>
+    <tr>
+      <td class="a-center"><img border="0" src="{{skin url="images/mail.gif"}}" alt="Mail registration: SHRM Seminars, PO Box 79482, Baltimore, MD 21279-0482"></td>
+      <td valign="top"><p><strong>Mail<br>
+          </strong>SHRM Seminars<br>
+          PO Box 79482<br>
+          Baltimore&nbsp;MD 21279</p></td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong><a href="http://www.shrm.org/Education/seminar/Pages/registration.aspx" title="">Registration Details</a></strong></td>
+    </tr>
+  </table>
+  <table class="data-table-contact" id="onSiteTraining" style="display:none;">
+    <tr>
+      <td colspan="2"><h4>Organizational Training &amp; Development</h4></td>
+    </tr>
+    <tr>
+      <td class="a-center"><img border="0" src="{{skin url="images/users.png"}}" alt="Fax registration: (703) 535-6490"></td>
+      <td valign="top">Bring this program to your <br>
+        organization, contact <br>
+        <b><a href="mailto:OrgTraining@shrm.org">OrgTraining@shrm.org</a> </b><br>
+        or <b>+1-703-535-6496</b></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+
+<!--
+<table class="data-table-contact">
+                <tbody>
+                <tr>
+                    <td class="a-center"><img border="0" align="top" height="28px" width="28px" src="{{skin url="images/phone.gif"}}"></td>
+                    <td valign="top"><strong>Phone</strong><br>703.548.3440, option #3<br>800.283.7476, option #3<br>(U.S. only)</td>
+                </tr>
+                <tr>
+                    <td class="a-center"><img border="0" src="{{skin url="images/fax.gif"}}" alt="Fax registration: (703) 535-6490"></td>
+                    <td valign="top"><strong>Fax<br></strong>703.535.6490</td>
+                </tr>
+                <tr>
+                    <td class="a-center"><img border="0" src="{{skin url="images/mail.gif"}}" alt="Mail registration: SHRM Seminars, PO Box 79482, Baltimore, MD 21279-0482"></td>
+                    <td valign="top"><p><strong>Mail<br></strong>SHRM Seminars<br>PO Box 79482<br>Baltimore&nbsp;MD 21279</p></td></tr>
+                <tr>
+                    <td colspan="2"><strong><a href="http://www.shrm.org/Education/seminar/Pages/registration.aspx" title="">Registration Details</a></strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h4 class="org-training">Organizational <br>Training &amp; <br>Development</h4></td>
+                </tr>
+                <tr>
+                    <td class="a-center"><img border="0" src="{{skin url="images/users.png"}}" alt="Fax registration: (703) 535-6490"></td>
+                    <td valign="top">Bring this program to your <br> organization, contact <br> <b><a href="mailto:OrgTraining@shrm.org">OrgTraining@shrm.org</a> </b><br>or <b>+1-703-535-6496</b></td>
+                </tr>
+                </tbody>
+            </table> -->
